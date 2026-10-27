@@ -1,0 +1,25 @@
+{
+  "name": "idurar-crm-backend",
+  "version": "1.0.0",
+  "description": "Backend API for lightweight IDURAR ERP-CRM",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seedData.js",
+    "test": "node tests/apiSmokeTest.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.1.3",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

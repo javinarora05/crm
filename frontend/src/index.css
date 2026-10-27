@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f0f2f5;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom card shadow styling */
+.crm-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Print styles for invoices */
+@media print {
+  aside, header, .no-print {
+    display: none !important;
+  }
+  .printable-invoice {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+}

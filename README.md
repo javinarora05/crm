@@ -73,7 +73,7 @@ npm install --prefix frontend
 ```
 
 ### 2. Start Development Servers
-Run both backend (`http://localhost:5000`) and frontend (`http://localhost:5173`) concurrently:
+Run both backend (`http://localhost:5001`) and frontend (`http://localhost:5173`) concurrently:
 ```bash
 npm run dev
 ```

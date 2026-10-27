@@ -1,7 +1,15 @@
 import axios from 'axios';
 
+// Dynamically determine API base URL
+// In production or separate hosting: points to VITE_API_URL (e.g. https://crm-xi-brown-43.vercel.app)
+// In local dev with Vite proxy: falls back to '/api/v1'
+const rawBaseUrl = import.meta.env.VITE_API_URL || '/api/v1';
+const baseURL = rawBaseUrl.endsWith('/api/v1')
+  ? rawBaseUrl
+  : `${rawBaseUrl.replace(/\/$/, '')}/api/v1`;
+
 const api = axios.create({
-  baseURL: '/api/v1',
+  baseURL,
   headers: {
     'Content-Type': 'application/json',
   },

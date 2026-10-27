@@ -8,7 +8,8 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "seed": "node src/seed/seedData.js",
-    "test": "node tests/apiSmokeTest.js"
+    "test": "node tests/apiSmokeTest.js",
+    "test:http": "node tests/httpSmokeTest.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
